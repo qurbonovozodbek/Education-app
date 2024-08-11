@@ -1,0 +1,142 @@
+/* src/assets/Navbar.css */
+
+/* Navbar Styles */
+body {
+  font-family: sans-serif;
+}
+.navbar {
+    background: linear-gradient(90deg, #6200ea, #3700b3);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .navbar-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+  }
+  .navbar-logo span {
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    color: red;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #ffeb3b;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ffeb3b;
+    transform: translateY(-2px); /* Slight upward movement */
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%; /* Expands the underline */
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Close Icon */
+  .hamburger.active .bar1 {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar2 {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar3 {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  /* Dropdown Animation */
+  /* .navbar-links {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+  } */
+  
+  .navbar-links.open {
+    max-height: 300px; /* Adjust according to your content */
+    border-radius: 10px;
+    opacity: 1;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #3700b3;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease; /* Animate max-height and opacity */
+    }
+  
+    .navbar-links.open {
+      max-height: 300px; /* Adjust according to your content */
+      opacity: 1;
+    }
+  
+    .navbar-links {
+      max-height: 0;
+      opacity: 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

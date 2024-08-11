@@ -1,0 +1,178 @@
+/* src/assets/Home.css */
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6200ea;
+  padding: 40px 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ffeb3b;
+  color: #6200ea;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  letter-spacing: 1px;
+}
+
+.hero-image {
+  width: 40%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Introduction Section */
+.introduction {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.intro-image {
+  width: 40%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.intro-content p {
+  max-width: 50%;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.features {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  color: #6200ea;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex: 0 0 300px;
+  text-align: left;
+}
+
+.testimonial-item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 30%;
+  margin-bottom: 15px;
+}
+
+.testimonial-item p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-item strong {
+  font-size: 16px;
+  color: #333;
+}
